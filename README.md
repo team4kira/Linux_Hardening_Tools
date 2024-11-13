@@ -14,3 +14,4 @@ Change Hostname - ideal if current hostname reveals sensitive data:
 * Enter following command: sudo hostnamectl set-hostname new_hostname
 * Enter following command: sudo reboot
 * After reboot use hostnamectl to identify if changes were made correctly
+* * Due to much of the commands requitre sudo, you may want to perform the following commands as a root user: sudo -i
