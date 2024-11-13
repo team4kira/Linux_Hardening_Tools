@@ -11,7 +11,7 @@
 Change Hostname
 
 * Edit the **/etc/hostname** file. Should just have your current hostname in it, edit to new_hostname.
-* Edit the **/etc/hosts**. Loocate the old_hostname and replace it with the new_hostname
+* Edit the **/etc/hosts**. Locate the old_hostname and replace it with the new_hostname
 * Enter following command: **sudo hostnamectl set-hostname new_hostname**
 * Enter following command: **sudo reboot**
 * After reboot use **sudo hostnamectl** to identify if changes were made correctly
