@@ -12,7 +12,7 @@
 | --- | --- |
 | Summary | A program capable of Virus and Signature Based detection. Freshclam is the virus database and needs to be updated regularly for ClamAV to be effective |
 | Installation | Run the following commands: <br> • sudo apt update <br> • sudo apt install clamav clamav-daemon <br> • sudo systemctl start clamav-freshclam <br> • sudo systemctl enable clamav-freshclam |
-| Configuration | If Freshclam is not updating, perform the following: <br> • `ps aux \| grep freshclam` <br> • sudo kill -9 <PID> (Process ID is found in second column typically) <br> • freshclam.lock can be stuck, if you see this file in /var/log/clamav delete it <br> • Edit /etc/clamav/freshclam.conf make sure UpdateLogFile has this path /var/log/clamav/freshclam.log and under LogVerbose change status to True <br> then perform a scan: <br> • sudo clamscan -r /<input path> ||
+| Configuration | If Freshclam is not updating, perform the following: <br> • `ps aux \| grep freshclam` <br> • sudo kill -9 <PID> (Process ID is found in second column typically) <br> • freshclam.lock can be stuck, if you see this file in /var/log/clamav delete it <br> • Edit /etc/clamav/freshclam.conf make sure UpdateLogFile has this path /var/log/clamav/freshclam.log and under LogVerbose change status to True <br><br> Perform a scan: <br> • sudo clamscan -r /<input path> ||
 
 Change Hostname
 
