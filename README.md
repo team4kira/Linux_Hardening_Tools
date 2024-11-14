@@ -8,6 +8,8 @@
 | Fail2Ban | A log-parsing and intrusion prevention system (IPS). Can monitor system logs like those of SSH. Prevents brute-force attacks and blocks malicious IPs. |
 | ClamAV | Anti-Virus software for Linux Machines |
 
+**Installation and Configurations:** 
+
 | Processes | ClamAV |
 | --- | --- |
 | Summary | A program capable of Virus and Signature Based detection. Freshclam is the virus database and needs to be updated regularly for ClamAV to be effective |
