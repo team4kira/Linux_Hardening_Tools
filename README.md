@@ -16,6 +16,10 @@
 | Installation | Run the following commands: <br> • sudo apt update <br> • `sudo apt install clamav clamav-daemon` <br> • `sudo systemctl start clamav-freshclam` <br> • `sudo systemctl enable clamav-freshclam` |
 | Configuration | If Freshclam is not updating, perform the following: <br> • `ps aux \| grep freshclam` <br> • `sudo kill -9 <PID>` (Process ID is found in second column typically) <br> • freshclam.lock can be stuck, if you see this file in /var/log/clamav delete it <br> • Edit /etc/clamav/freshclam.conf make sure UpdateLogFile has this path /**var/log/clamav/freshclam.log** and under LogVerbose change status to **True** <br><br> Perform a scan: <br> • `sudo clamscan -r /<input_path>` <br> Update Fleshclam: <br> • `sudo freshclam` ||
 
+| Cronjob Command | Summary |
+| --- | --- |
+| 0 2 * * 1 sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean | Runs update/upgrade on Linux every week |
+
 Change Hostname
 
 * Edit the **/etc/hostname** file. Should just have your current hostname in it, edit to new_hostname.
