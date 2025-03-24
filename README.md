@@ -1,4 +1,4 @@
-# Linux Hardening Tools and Recommnedations
+# Linux Hardening Tools and Recommendations
 
 | Tool | Function |
 | --- | --- |
